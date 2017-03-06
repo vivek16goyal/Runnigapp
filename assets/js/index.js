@@ -6707,23 +6707,23 @@ function GetAccCode() {
     }
 
 
-    //function capturePhotoEdit() { ///////////
-    //    navigator.camera.getPicture(onPhotoDataSuccess, onFail, {
-    //        quality: 20,
-    //        destinationType: destinationType.FILE_URI,
-    //         saveToPhotoAlbum: true
-    //    });
-    //}
-function capturePhotoEdit() {
-    // Retrieve image file location from specified source
-    navigator.camera.getPicture(getImageURI, function(message) {
-        alert('Image Capture Failed');
-    }, {
-        quality : 40,
-        destinationType : Camera.DestinationType.FILE_URI
-    });
+    function capturePhotoEdit() { ///////////
+        navigator.camera.getPicture(onPhotoDataSuccess, onFail, {
+            quality: 20,
+            destinationType: destinationType.FILE_URI,
+             saveToPhotoAlbum: true
+        });
+    }
+//function capturePhotoEdit() {
+//    // Retrieve image file location from specified source
+//    navigator.camera.getPicture(getImageURI, function(message) {
+//        alert('Image Capture Failed');
+//    }, {
+//        quality : 40,
+//        destinationType : Camera.DestinationType.FILE_URI
+//    });
 
-}
+//}
 
     function getPhoto(source) {  ////////////
         navigator.camera.getPicture(onPhotoURISuccess, onFail, {
